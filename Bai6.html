@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<!--5% nếu tổng doanh số nhỏ hơn hoặc bằng 100 triệu.-->
+<!--10% nếu tổng doanh số nhỏ hơn hoặc bằng 300 triệu.-->
+<!--20 % nếu tổng doanh số là lớn hơn 300 triệu.-->
+<script>
+    let sales = Number(prompt("Nhap gia tri doanh so ban hang: "));
+    if (sales <= 100) {
+        let interest = sales * 5 / 100;
+    } else if (sales <= 300) {
+        let interest = sales * 10 / 100;
+    } else if (sales > 300) {
+        let interest = sales * 20 / 100;
+    }
+    alert("Hoa hong : " + interest);
+</script>
+</body>
+</html>
